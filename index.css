@@ -30,7 +30,7 @@
   }
 
   .service-para {
-    @apply max-md:text-center font-medium text-[18px] md:text-[20px] leading-[150%] text-graphiteGray tracking-[1px] line-clamp-3;
+    @apply max-md:text-center font-medium text-[18px] md:text-[20px] leading-[150%] text-graphiteGray tracking-[1px];
   }
 
   .filter-buttons {
@@ -336,7 +336,6 @@ body::-webkit-scrollbar {
 .swiper-pagination-custom {
   background: rgba(0, 0, 0, 0.147);
   padding: 8px;
-  border-radius: 20px;
   bottom: 10px;
 }
 

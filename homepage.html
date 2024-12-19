@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CPX Início</title>
+    <title>CPX Home</title>
     <link rel="stylesheet" href="./output.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
+
   <body id="body" class="bg-ivoryMist overflow-hidden font-inter">
+    <script src="/language-handler.js"></script>
     <div
       class="pointer-events-none w-10 h-10 fake-activity fixed bg-transparent"
     ></div>
@@ -58,20 +64,20 @@
             />
           </div>
           <div class="flex items-center gap-5 xl:gap-8 max-lg:hidden">
-            <a href="/portugues.html" class="nav-link navbar-navlink">
-              Início
+            <a href="/" class="nav-link navbar-navlink"> Home </a>
+            <a href="#aboutus" class="nav-link navbar-navlink"> About us </a>
+            <a href="#services" class="nav-link navbar-navlink"> Services </a>
+            <a href="#portfolio" class="nav-link navbar-navlink">
+              Some of our work
             </a>
-            <a href="#aboutus" class="nav-link navbar-navlink"> Conceito </a>
-            <a href="#services" class="nav-link navbar-navlink"> Serviços </a>
-            <a href="#portfolio" class="nav-link navbar-navlink"> Projectos </a>
           </div>
           <div class="flex items-center gap-5 xl:gap-10 max-lg:hidden">
-            <a href="/fale-connosco.html">
+            <a href="contact-us.html">
               <button
-                class="bg-sunsetRed px-5 xl:px-7 py-4 text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-sunsetRed hover:text-sunsetRed transition-all duration-300 ease-in-out"
+                class="bg-sunsetRed xl:min-w-[162px] px-5 xl:px-7 py-4 text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-sunsetRed hover:text-sunsetRed transition-all duration-300 ease-in-out"
                 type="submit"
               >
-                Contacte-nos
+                Contact Us
               </button>
             </a>
             <div class="relative">
@@ -84,7 +90,7 @@
                   id="languageText"
                   class="lg:text-graphiteGray text-white text-base font-medium leading-normal"
                 >
-                  Português
+                  English
                 </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +113,14 @@
                 id="languageDropdown"
                 class="hidden overflow-hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg"
               >
-                <a href="index.html" class="language-text" data-value="English"
+                <a
+                  href="/homepage.html"
+                  class="language-text"
+                  data-value="English"
                   >English</a
                 >
                 <a
-                  href="portugues.html"
+                  href="index.html"
                   class="language-text"
                   data-value="Português"
                   >Português</a
@@ -182,7 +191,7 @@
         class="max-w-[1536px] w-full mx-auto lg:-mt-[702px] max-lg:bg-sunsetRed max-lg:rounded-tr-[28vw] max-lg:pt-20 max-lg:pb-[100px] flex justify-end items-center max-lg:pr-4 pl-4 relative z-20"
       >
         <div
-          class="w-full xl:max-w-[1310px] ml-auto flex flex-col lg:flex-row justify-center 2xl:justify-end items-center max-md:gap-7 max-lg:gap-12"
+          class="w-full xl:max-w-[1320px] ml-auto flex flex-col lg:flex-row justify-center 2xl:justify-end items-center max-md:gap-7 max-lg:gap-12"
         >
           <!-- Logo and button -->
           <div class="flex flex-col max-lg:items-center max-lg:justify-center">
@@ -207,18 +216,16 @@
               >
                 <div class="overflow-hidden">
                   <span class="flex hero-main-right-text-mobile"
-                    >CONSULTORIA E
+                    >CONSULTING AND
                   </span>
                 </div>
                 <div class="overflow-hidden">
                   <span class="flex hero-main-right-text-mobile"
-                    >ENGENHARIA DE</span
+                    >ENGINEERING</span
                   >
                 </div>
                 <div class="overflow-hidden">
-                  <span class="flex hero-main-right-text-mobile"
-                    >PROJECTOS</span
-                  >
+                  <span class="flex hero-main-right-text-mobile">PROJECTS</span>
                 </div>
               </h2>
             </div>
@@ -226,18 +233,18 @@
               class="mt-[30px] overflow-hidden md:mt-[60px] lg:mt-[138px] text-white text-[4vw] md:text-[24px] xl:text-[26px] font-medium leading-[34px] uppercase text-center whitespace-nowrap"
             >
               <span class="quality-text-animation origin-left flex">
-                QUALIDADE E PRECISÃO NA SUA OBRA
-              </span>
+                QUALITY AND PRECISION IN YOUR WORK</span
+              >
             </h2>
             <div
               class="w-full overflow-hidden mt-[30px] md:mt-[60px] lg:mt-[104px] flex items-center justify-center sm:justify-end"
             >
-              <a href="/projectos-em-destaque.html">
+              <a href="/featured-projects.html">
                 <button
                   class="w-fit explore-btn-anim flex-shrink-0 clear-start py-3 md:py-4 px-4 md:px-[18px] flex items-center justify-center gap-[10px] bg-white text-black hover:bg-black hover:text-white group whitespace-nowrap group"
                 >
                   <span class="text-sm md:text-base font-medium leading-[20px]"
-                    >Saiba mais</span
+                    >Explore Now</span
                   >
                   <svg
                     width="34"
@@ -266,16 +273,16 @@
             >
               <div class="overflow-hidden">
                 <span class="flex hero-main-right-text-desktop"
-                  >CONSULTORIA E
+                  >CONSULTING AND
                 </span>
               </div>
               <div class="overflow-hidden">
                 <span class="flex hero-main-right-text-desktop"
-                  >ENGENHARIA DE</span
+                  >ENGINEERING</span
                 >
               </div>
               <div class="overflow-hidden">
-                <span class="flex hero-main-right-text-desktop">PROJECTOS</span>
+                <span class="flex hero-main-right-text-desktop">PROJECTS</span>
               </div>
             </h2>
           </div>
@@ -337,7 +344,7 @@
                   <p
                     class="text-[4.5vw] sm:text-[3vw] lg:text-[24px] font-medium leading-[5vw] sm:leading-[3.9vw] lg:leading-[32px] tracking-[1px]"
                   >
-                    Anos de experiência
+                    Years of experience
                   </p>
                 </div>
                 <div
@@ -352,7 +359,7 @@
                   <p
                     class="text-[4.5vw] sm:text-[3vw] lg:text-[24px] font-medium leading-[5vw] sm:leading-[3.9vw] lg:leading-[32px] tracking-[1px]"
                   >
-                    Projetos concluídos
+                    Projects completed
                   </p>
                 </div>
               </div>
@@ -363,20 +370,25 @@
                 <h3
                   class="text-[6vw] lg:text-[42px] font-bold leading-[46px] tracking-[-0.84px]"
                 >
-                  Comece o seu projecto hoje
+                  Start your project today.
                 </h3>
-                <form class="flex items-center justify-start h-10 sm:h-[66px]">
+                <form
+                  id="contactForm"
+                  class="flex items-center justify-start h-10 sm:h-[66px]"
+                >
                   <input
                     required
                     type="email"
-                    placeholder="Indique o seu email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email address"
                     class="w-full lg:w-[358px] h-full bg-white px-3 sm:px-[26px] text-base sm:text-xl font-medium leading-[26px] outline-none"
                   />
                   <button
                     type="submit"
-                    class="px-4 sm:px-[36px] text-base sm:text-lg md:text-xl font-black leading-[26px] text-white bg-deepCharcoal h-full whitespace-nowrap transition-all duration-300 ease-linear border border-deepCharcoal box-border hover:bg-transparent hover:text-deepCharcoal"
+                    class="px-4 sm:px-[36px] text-base min-w-[125px] sm:min-w-[180px] sm:text-lg md:text-xl font-black leading-[26px] text-white bg-deepCharcoal h-full whitespace-nowrap transition-all duration-300 ease-linear border border-deepCharcoal box-border hover:bg-transparent hover:text-deepCharcoal"
                   >
-                    Fale connosco
+                    Let's Chat
                   </button>
                 </form>
               </div>
@@ -450,25 +462,25 @@
               />
             </svg>
 
-            <a href="/portugues.html" class="sidebar-navlink"> Início </a>
-            <a href="#aboutus" class="nav-link sidebar-navlink"> Conceito </a>
-            <a href="#services" class="nav-link sidebar-navlink"> Serviços </a>
+            <a href="/" class="sidebar-navlink"> Home </a>
+            <a href="#aboutus" class="nav-link sidebar-navlink"> About Us </a>
+            <a href="#services" class="nav-link sidebar-navlink"> Services </a>
             <a href="#portfolio" class="nav-link sidebar-navlink">
-              Projectos
+              Some of our work
             </a>
             <div class="flex gap-10 flex-col lg:hidden">
-              <a href="/fale-connosco.html">
+              <a href="/contact-us.html">
                 <button
                   class="bg-white md:px-7 py-2 md:py-4 text-sunsetRed hover:text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-white transition-all duration-300 ease-in-out max-w-[200px] w-full"
                   type="submit"
                 >
-                  Contacte-nos
+                  Contact Us
                 </button>
               </a>
               <div class="relative">
                 <button
                   id="sidebarLanguageDropdownButton"
-                  class="flex items-center gap-3 w-full"
+                  class="flex items-center gap-3 max-w-[150px]"
                 >
                   <!-- Language globe icon -->
                   <svg
@@ -518,7 +530,7 @@
                     id="sidebarLanguageText"
                     class="text-white text-xl font-medium leading-normal"
                   >
-                    Português
+                    English
                   </p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -542,13 +554,13 @@
                   class="hidden overflow-hidden absolute mt-2 w-32 bg-white rounded-lg shadow-lg"
                 >
                   <a
-                    href="index.html"
+                    href="homepage.html"
                     class="language-text"
                     data-value="English"
                     >English</a
                   >
                   <a
-                    href="portugues.html"
+                    href="index.html"
                     class="language-text"
                     data-value="Português"
                     >Português</a
@@ -574,12 +586,14 @@
           <!-- Main content -->
           <div class="w-full pt-5 xl:pt-[30px] sm:max-lg:pl-[65px]">
             <div
+              style="z-index: 35; position: relative"
               class="w-full pr-4 md:pr-[65px] xl:pr-[130px] 2xl:pr-0 z-[1] relative"
             >
               <div
                 class="w-full 2xl:max-w-[960px] h-[50vw] md:h-[428px] rounded-br-[30vw] lg:rounded-br-[300px] overflow-hidden"
               >
                 <img
+                  style="z-index: 50; position: relative"
                   src="./assets/img/home.png"
                   class="w-full h-full object-cover home-image-animation"
                   alt="about-us"
@@ -591,40 +605,35 @@
             >
               <div
                 class="2xl:max-w-[1015px] w-full md:h-[784px] bg-seafoamWhite rounded-tr-[15vw] sm:rounded-tr-[30vw] lg:rounded-tr-[400px] 2xl:rounded-tr-none sm:-mt-[90px] md:-mt-[273px] max-sm:pr-10 max-md:pr-10 max-lg:pr-[70px] pl-6 lg:pl-[8.681vw] 2xl:pl-[125px] pb-[4.583vw] 2xl:pb-[66px] max-sm:pt-5 max-md:pt-[16vw] flex flex-col items-start justify-end gap-[5.903vw] 2xl:gap-[70px]"
+                style="z-index: 30; position: relative"
               >
                 <p
-                  class="lg:max-w-[55.4vw] xl:max-w-[48.4vw] 2xl:max-w-[697px] w-full text-base sm:text-xl leading-[28px] sm:leading-[34px] text-deepCharcoal"
+                  class="lg:max-w-[55.4vw] xl:max-w-[48.4vw] 2xl:max-w-[697px] w-full text-base sm:text-xl leading-[28px] sm:leading-[34px] text-deepCharcoal relative"
                 >
-                  Fundada em 2011, CPX - Consultoria e Projectos é uma empresa
-                  sedeada em Portugal que se destaca pela excelência e inovação
-                  em serviços de consultoria e gestão de projectos. Com uma
-                  trajectória de sucesso, temos orgulho de ter realizado
-                  projetos, nas mais variadas áreas e especialidades, em
-                  diversos países e continentes, incluindo a Antártida,
-                  consolidando a nossa reputação global e um pleno compromisso
-                  com a qualidade do nosso trabalho e a satisfação dos nossos
-                  clientes. A nossa equipa é composta por profissionais
-                  altamente qualificados e dedicados, prontos para enfrentar
-                  desafios e entregar soluções personalizadas que superem as
-                  expectativas do nossos clientes procurando a solução adequada
-                  a cada situação.
+                  Founded in 2011, CPX is a Portugal-based Engineering company
+                  renowned for excellence and innovation in consulting and
+                  project management services. We take pride in having completed
+                  projects on all continents, solidifying our global reputation
+                  and commitment to quality and client satisfaction. Our team is
+                  composed of highly qualified and dedicated professionals,
+                  ready to tackle challenges and deliver customized solutions
+                  that exceed expectations, providing a tailored experience for
+                  each client.
                 </p>
-                <div
+                <!-- <div
                   class="lg:max-w-[48.4vw] 2xl:max-w-[780px] w-full sm:pr-[75px] flex items-center justify-between gap-4"
                 >
-                  <a href="/projectos-em-destaque.html">
-                    <button
-                      class="relative z-[25] py-3 sm:py-4 px-4 sm:px-7 bg-sunsetRed text-base font-black leading-[20px] text-white box-border border border-sunsetRed hover:bg-transparent hover:text-sunsetRed duration-300 ease-in-out transition-all"
-                    >
-                      Mais sobre nós
-                    </button>
-                  </a>
+                  <button
+                    class="relative z-[25] py-3 sm:py-4 px-4 sm:px-7 bg-sunsetRed text-base font-black leading-[20px] text-white box-border border border-sunsetRed hover:bg-transparent hover:text-sunsetRed duration-300 ease-in-out transition-all"
+                  >
+                    About Us
+                  </button>
                   <img
                     src="./assets/svg/aboutUrRightArrow.svg"
                     alt="about us arrow right"
                     class="max-sm:max-w-16 max-sm:w-full"
                   />
-                </div>
+                </div> -->
               </div>
               <!-- Vertical line -->
               <div
@@ -683,21 +692,20 @@
         <h3
           class="font-bold services-main-text overflow-hidden text-[32px] sm:text-[42px] md:text-[58px] lg:text-[82px] leading-[116%] text-deepCharcoal"
         >
-          <span class="flex">Serviços</span>
+          <span class="flex">Our services.</span>
         </h3>
         <p
           class="font-normal overflow-hidden service-para-text text-base lg:text-xl text-deepCharcoal mt-4 lg:mt-[27px]"
         >
           <span class="flex">
-            Desenvolvemos como principal atividade a produção de serviços nas
-            diversas especialidades de Engenharia, nas áreas de Projecto, de
-            Consultoria, de Gestão de Obra e de Condução e Monitorização de
-            Instalações Especiais.
-          </span>
+            Our main activity is the provision of Engineering services in the
+            areas of Project Design, Consultancy, Construction Management,
+            Operation, and Monitoring of Special Installations.</span
+          >
         </p>
         <!-- Cards section -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-[2px] mt-4 lg:mt-[23px] pb-5 sm:pb-10 md:pb-20 lg:pb-[146px]"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-[2px] mt-4 lg:mt-[23px] pb-5 sm:pb-10 md:pb-20 lg:pb-[130px]"
         >
           <!-- 1ST CARD -->
           <div
@@ -709,12 +717,12 @@
               class="w-[110px] sm:w-[146px] h-[110px] sm:h-[146px]"
             />
             <div class="flex flex-col md:gap-1">
-              <p class="service-subHead">Eficiência</p>
+              <p class="service-subHead">Smooth workflow</p>
               <p class="service-para">
-                Priorizamos soluções práticas e inovadoras, garantindo o
-                cumprimento de prazos e resultados de alta qualidade.
+                We prioritise practical and innovative solutions, ensuring
+                deadlines are met and delivering high-quality results.
               </p>
-              <div
+              <!-- <div
                 class="w-full float-start py-5 scale-y-0 group-hover:scale-y-100 duration-300 ease-in-out transition-all flex items-center justify-end"
               >
                 <svg
@@ -729,7 +737,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- 2ND CARD -->
@@ -742,12 +750,12 @@
               class="w-[110px] sm:w-[146px] h-[110px] sm:h-[146px]"
             />
             <div class="flex flex-col md:gap-1">
-              <p class="service-subHead">Professionalismo</p>
+              <p class="service-subHead">Professionalism</p>
               <p class="service-para">
-                Trabalhamos com rigor técnico e compromisso, assegurando a
-                excelência em cada projeto desenvolvido.
+                We work with technical precision and commitment, guaranteeing
+                excellence in every project undertaken.
               </p>
-              <div
+              <!-- <div
                 class="w-full float-start py-5 scale-y-0 group-hover:scale-y-100 duration-300 ease-in-out transition-all flex items-center justify-end"
               >
                 <svg
@@ -762,7 +770,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- 3RD CARD -->
@@ -775,12 +783,12 @@
               class="w-[110px] sm:w-[146px] h-[110px] sm:h-[146px]"
             />
             <div class="flex flex-col md:gap-1">
-              <p class="service-subHead">Comunicação</p>
+              <p class="service-subHead">Trusted partner</p>
               <p class="service-para">
-                Mantemos um diálogo claro e contínuo com os nossos clientes,
-                promovendo transparência em todas as etapas do processo.
+                We maintain clear and continuous dialogue with our clients,
+                promoting transparency throughout every stage of the process.
               </p>
-              <div
+              <!-- <div
                 class="w-full float-start py-5 scale-y-0 group-hover:scale-y-100 duration-300 ease-in-out transition-all flex items-center justify-end"
               >
                 <svg
@@ -795,7 +803,7 @@
                     fill="black"
                   />
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -847,26 +855,26 @@
               >
                 <span
                   class="flex min-h-full w-full md:block justify-center max-md:text-center"
-                  >Projectos</span
+                  >Our Portfolio.</span
                 >
               </h3>
               <p
                 class="overflow-hidden portfolio-para-text text-deepCharcoal max-w-[600px] sm:max-w-[500px] lg:max-w-[633px] w-full text-base sm:text-lg xl:text-xl font-normal leading-[170%] pt-6 sm:8 max-md:text-center"
               >
                 <span class="flex">
-                  O nosso portfólio inclui uma série de projectos: desde
-                  edifícios de serviços, museus, instalações educacionais,
-                  hospitais e outros edifícios relacionados à saúde, edifícios
-                  industriais, entre outros.
+                  Our portfolio involves a series of projects from service
+                  buildings, museums, education facilities, hospitals and other
+                  medical related buildings, industrials buildings, among
+                  others.
                 </span>
               </p>
             </div>
-            <a href="/projectos-em-destaque.html">
+            <a href="/featured-projects.html">
               <button
                 class="bg-sunsetRed px-[18px] py-2 sm:py-4 text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-sunsetRed hover:text-sunsetRed duration-300 ease-in-out transition-all max-md:mt-4 flex items-center justify-center gap-[10px] group box-border"
                 type="submit"
               >
-                Explore o nosso portfólio
+                Explore
                 <svg
                   width="34"
                   height="6"
@@ -913,24 +921,23 @@
             <p
               class="project-mind-text overflow-hidden lg:text-[68px] md:text-[40px] sm:text-[25px] text-[22px] font-bold leading-[116%] text-deepCharcoal max-w-[738px] w-full max-sm:text-center lg:mb-[70px] md:mb-[45px] sm:mb-[30px] mb-4"
             >
-              <span class="flex">Tem um projecto em mente?</span>
+              <span class="flex">Do you have a project in mind?</span>
             </p>
             <p
               class="md:text-xl no-matter-text overflow-hidden max-sm:text-sm font-normal sm:leading-[34px] text-deepCharcoal"
             >
               <span class="flex"
-                >Não importa a sua dimensão ou complexidade. Estamos aqui para o
-                ajudar a encontrar soluções.
-              </span>
+                >No matter how big or small. We are happy to help.</span
+              >
             </p>
             <div
               class="flex get-in-touch-btn-wrapper overflow-hidden lg:max-w-[660px] max-w-[490px] w-full lg:mt-[60px] md:mt-[40px] mt-[25px] justify-between max-sm:flex-col sm:gap-2 gap-6 items-center"
             >
-              <a href="/fale-connosco.html">
+              <a href="/contact-us.html">
                 <button
                   class="flex items-center justify-center gap-[10px] bg-white px-[18px] py-3 sm:py-4 font-medium text-right leading-[20px] hover:bg-black hover:text-white group"
                 >
-                  Contacte-nos
+                  Get in touch
                   <span
                     ><svg
                       width="34"
@@ -949,13 +956,13 @@
                   </span>
                 </button>
               </a>
-              <div>
+              <!-- <div>
                 <img
                   src="./assets/svg/heroBelowRightArrow.svg"
                   alt="right arrow"
                   class="max-sm:max-w-[65px]"
                 />
-              </div>
+              </div> -->
             </div>
           </div>
           <!-- Inner-div-code -->
@@ -978,32 +985,131 @@
       <!-- Hr line -->
       <div class="w-full flex items-center">
         <div
-          class="w-full h-[1px] bg-deepCharcoal opacity-[0.32] lg:mt-[76px] md:mt-[55px] sm:mt-[40px] mt-[35px]"
+          class="w-full lg:mt-[76px] md:mt-[55px] sm:mt-[40px] mt-[35px]"
         ></div>
         <div class="max-md:hidden w-[65px] xl:w-[130px]"></div>
       </div>
-      <!-- Footer copyright -->
-      <div class="w-full flex items-center max-md:px-4">
-        <div class="w-[65px] xl:w-[130px] max-md:hidden 2xl:hidden"></div>
+      <!-- FOOTER -->
+      <footer>
+        <span
+          class="!bg-deepCharcoal opacity-[0.32] w-full flex h-[1px]"
+        ></span>
         <div
-          class="2xl:max-w-[1276px] w-full 2xl:mx-auto lg:mt-[63px] md:my-[45px] sm:my-[30px] my-3 lg:mb-[50px] max-md:text-center"
+          class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[880px] w-full mx-auto px-4 lg:pt-[65px] md:pt-14 pt-10 !pb-[22px] sm:!pb-[100px] flex xl:flex-row flex-col gap-4 items-center justify-between"
         >
-          <p
-            href="/"
-            class="text-graphiteGray text-sm md:text-[15px] font-medium"
+          <div
+            class="text-graphiteGray text-sm md:text-[15px] font-medium xl:w-fit w-full text-center"
           >
-            © Copyright 2024 CPX, Lda. - Consultoria e Engenharia de Projectos -
+            © Copyright 2024 CPX, Lda. - Consulting and Engineering Projects -
             <a
               href="mailto:geral@cpx.com.pt"
               class="underline text-graphiteGray text-sm md:text-[15px]"
               >geral@cpx.com.pt</a
             >
-          </p>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-between xm:gap-10 gap-4 2xl:gap-[75px] xl:w-fit w-full text-center"
+          >
+            <div
+              class="flex items-center text-graphiteGray text-sm md:text-[15px] font-medium gap-1 mx-auto"
+            >
+              <p>website:</p>
+              <a
+                href="https://www.mariaoliveira.co.uk/"
+                target="_blank"
+                class="underline text-graphiteGray text-sm md:text-[15px] font-medium"
+                >www.mariaoliveira.co.uk</a
+              >
+            </div>
+            <a
+              class="textgraphiteGray text-graphiteGray text-sm md:text-[15px] font-medium underline mx-auto"
+              href="/política-de-privacidade.html"
+              >Terms & Policies</a
+            >
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
     <!-- Footer end -->
+    <!-- EmailJS Script -->
+    <script>
+      // Toast notification function
+      function showToast(message, type = "success") {
+        // Remove existing toast if any
+        const existingToast = document.querySelector(".toast");
+        if (existingToast) {
+          existingToast.remove();
+        }
 
+        // Create toast element
+        const toast = document.createElement("div");
+        toast.className = `toast ${type}`;
+        toast.innerHTML = `
+                <span>${message}</span>
+                <button class="toast-close">&times;</button>
+            `;
+
+        // Add toast to document
+        document.body.appendChild(toast);
+
+        // Handle close button
+        const closeButton = toast.querySelector(".toast-close");
+        closeButton.addEventListener("click", () => {
+          toast.style.animation = "slideOut 0.3s ease-in-out forwards";
+          setTimeout(() => toast.remove(), 300);
+        });
+
+        // Auto remove after 3 seconds
+        setTimeout(() => {
+          if (toast.parentElement) {
+            toast.style.animation = "slideOut 0.3s ease-in-out forwards";
+            setTimeout(() => toast.remove(), 300);
+          }
+        }, 3000);
+      }
+
+      // Initialize EmailJS
+      emailjs.init("_WzKV0pX073zlzt9K");
+
+      // Form submission handler
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const submitButton = this.querySelector("button");
+          submitButton.disabled = true;
+          submitButton.textContent = "Sending...";
+
+          // Prepare form data
+          const formData = {
+            email: this.email.value,
+          };
+
+          try {
+            // Send emails
+            await Promise.all([
+              emailjs.send("service_dke0v1s", "template_8tymq2o", formData),
+              emailjs.send("service_dke0v1s", "template_nlv41t9", {
+                email: formData.email,
+              }),
+            ]);
+
+            // Show success message
+            showToast("Thank you for your email", "success");
+            this.reset();
+          } catch (error) {
+            console.error("Email sending error:", error);
+            showToast(
+              "Failed to send message. Please try again later.",
+              "error"
+            );
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = "Let's Chat";
+          }
+        });
+    </script>
     <!-- JS for sidebar -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -1029,5 +1135,7 @@
     <!-- JS file -->
     <script src="./index.js"></script>
     <script src="./animation.js"></script>
+
+    <div class="toast-overlay" id="toast-overlay"></div>
   </body>
 </html>

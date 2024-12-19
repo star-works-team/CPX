@@ -1,1556 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>CPX Featured projects</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./output.css" />
-  <link rel="stylesheet" href="./index.css" />
-  <title>CPX Featured projects</title>
-</head>
+  <body id="body" class="bg-ivoryMist font-inter">
+    <div
+      class="pointer-events-none w-10 h-10 fake-activity fixed bg-transparent"
+    ></div>
 
-<body id="body" class="bg-ivoryMist font-inter">
-  <div class="pointer-events-none w-10 h-10 fake-activity fixed bg-transparent"></div>
+    <button
+      id="scrollToTop"
+      class="hidden fixed bottom-6 right-6 size-12 bg-sunsetRed rounded-full shadow-xl z-[70] animate-bounce p-2"
+    >
+      <img
+        src="./assets/svg/backToTopArrow.svg"
+        alt="back to top"
+        class="w-full h-full object-cover"
+      />
+    </button>
+    <!-- Back to top btn end -->
 
-  <button id="scrollToTop"
-    class="hidden fixed bottom-6 right-6 size-12 bg-sunsetRed rounded-full shadow-xl z-[70] animate-bounce p-2">
-    <img src="./assets/svg/backToTopArrow.svg" alt="back to top" class="w-full h-full object-cover" />
-  </button>
-  <!-- Back to top btn end -->
-
-  <nav id="nav-hero-wrapper" class="">
-    <div class="orange-moving-object ease-linear absolute z-[1004] opacity-0 pointer-events-none">
-      <img src="./assets/img/orangeLogoIcon.png" class="w-full" alt="" />
-    </div>
-    <div class="white-moving-object ease-linear z-[1005] fixed opacity-0 pointer-events-none">
-      <img src="./assets/img/whiteLogoIcon.png" class="w-full" alt="" />
-    </div>
-    <!-- Navbar and sidebar start -->
-    <div id="hero"
-      class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[951px] relative  navbar-wrapper w-full mx-auto px-4">
-      <!-- Navbar -->
-      <div class="flex justify-between items-center gap-5 pt-4 md:pt-4">
-        <!-- Logo -->
-        <div class="flex logo-wrappper">
-          <div class="final-pos">
+    <nav id="nav-hero-wrapper" class="">
+      <div
+        class="orange-moving-object ease-linear absolute z-[1004] opacity-0 pointer-events-none"
+      >
+        <img src="./assets/img/orangeLogoIcon.png" class="w-full" alt="" />
+      </div>
+      <div
+        class="white-moving-object ease-linear z-[1005] fixed opacity-0 pointer-events-none"
+      >
+        <img src="./assets/img/whiteLogoIcon.png" class="w-full" alt="" />
+      </div>
+      <!-- Navbar and sidebar start -->
+      <div
+        id="hero"
+        class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[951px] relative navbar-wrapper w-full mx-auto px-4"
+      >
+        <!-- Navbar -->
+        <div class="flex justify-between items-center gap-5 pt-4 md:pt-4">
+          <!-- Logo -->
+          <div class="flex logo-wrappper">
+            <div class="final-pos">
+              <a href="/">
+                <img
+                  class="h-[70px] md:h-[90px]"
+                  src="./assets/img/orangeLogoIcon.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
             <a href="/">
-              <img class="h-[70px] md:h-[90px]" src="./assets/img/orangeLogoIcon.png" alt="logo" />
+              <img
+                class="h-[70px] logo-text md:h-[90px]"
+                src="./assets/img/logotext.png"
+                alt="logo-text"
+              />
             </a>
           </div>
-          <a href="/">
-            <img class="h-[70px] logo-text md:h-[90px]" src="./assets/img/logotext.png" alt="logo-text" />
-          </a>
-        </div>
-        <div class="flex items-center gap-5 xl:gap-8 max-lg:hidden">
-          <a href="/" class="nav-link navbar-navlink"> Home </a>
-          <a href="#aboutus" class="nav-link navbar-navlink"> About us </a>
-          <a href="#services" class="nav-link navbar-navlink"> Services </a>
-          <a href="#portfolio" class="nav-link navbar-navlink">
-            Projects
-          </a>
-        </div>
-        <div class="flex items-center gap-5 xl:gap-10 max-lg:hidden">
-          <a href="contact-us.html">
-            <button
-              class="bg-sunsetRed px-5 xl:px-7 py-4 text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-sunsetRed hover:text-sunsetRed transition-all duration-300 ease-in-out"
-              type="submit">
-              Contact Us
-            </button>
-          </a>
-          <div class="relative">
-            <button id="languageDropdownButton" class="flex items-center gap-1 w-[140px]">
-              <img src="./assets/svg/languageicon.svg" alt="Language Icon" />
-              <p id="languageText" class="lg:text-graphiteGray text-white text-base font-medium leading-normal">
-                English
-              </p>
-              <img src="/assets/svg/arrow.svg" alt="arrow" />
-            </button>
-            <div id="languageDropdown"
-              class="hidden overflow-hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg">
-              <a href="/featured-projects.html" class="language-text" data-value="English">English</a>
-              <a href="/projectos-em-destaque.html" class="language-text" data-value="Português">Português</a>
+          <div class="flex items-center gap-5 xl:gap-8 max-lg:hidden">
+            <a href="/homepage.html" class="nav-link navbar-navlink"> Home </a>
+            <a href="/homepage.html" class="nav-link navbar-navlink">
+              About us
+            </a>
+            <a href="/homepage.html" class="nav-link navbar-navlink">
+              Services
+            </a>
+            <a href="/homepage.html" class="nav-link navbar-navlink">
+              Projects
+            </a>
+          </div>
+          <div class="flex items-center gap-5 xl:gap-10 max-lg:hidden">
+            <a href="contact-us.html">
+              <button
+                class="bg-sunsetRed px-5 xl:px-7 py-4 xl:min-w-[162px] text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-sunsetRed hover:text-sunsetRed transition-all duration-300 ease-in-out"
+                type="submit"
+              >
+                Contact Us
+              </button>
+            </a>
+            <div class="relative">
+              <button
+                id="languageDropdownButton"
+                class="flex items-center gap-1 w-[140px]"
+              >
+                <img src="./assets/svg/languageicon.svg" alt="Language Icon" />
+                <p
+                  id="languageText"
+                  class="lg:text-graphiteGray text-white text-base font-medium leading-normal"
+                >
+                  English
+                </p>
+                <img src="/assets/svg/arrow.svg" alt="arrow" />
+              </button>
+              <div
+                id="languageDropdown"
+                class="hidden overflow-hidden absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg"
+              >
+                <a
+                  href="/featured-projects.html"
+                  class="language-text"
+                  data-value="English"
+                  >English</a
+                >
+                <a
+                  href="/projectos-em-destaque.html"
+                  class="language-text"
+                  data-value="Português"
+                  >Português</a
+                >
+              </div>
             </div>
           </div>
+          <img
+            id="navbtn"
+            class="lg:hidden cursor-pointer hover:scale-110 ease-in-out duration-300 transition-all"
+            src="/assets/svg/HamburgerIcon.svg"
+            alt="HamburgerIcon"
+          />
         </div>
-        <img id="navbtn" class="lg:hidden cursor-pointer hover:scale-110 ease-in-out duration-300 transition-all"
-          src="/assets/svg/HamburgerIcon.svg" alt="HamburgerIcon" />
       </div>
-    </div>
-  </nav>
-  <!-- Navbar and sidebar end -->
-  <!------------ sidebar start -------->
-  <div class="2xl:flex 2xl:items-center 2xl:justify-center">
-    <div class="2xl:flex-shrink-0">
-      <div id="sidebarbtn"
-        class="fixed z-[10000] bg-sunsetRed top-0 w-full sm:w-[50%] left-[-105%] h-screen p-6 duration-300 ease-in-out lg:hidden shadow-2xl">
-        <div class="flex flex-col gap-6">
-          <img class="absolute right-3 hover:rotate-90 duration-300 ease-in-out transition-all cursor-pointer"
-            id="cancel" src="/assets/svg/Cross-Icon.svg" alt="Cross-Icon" />
-          <a href="/" class="sidebar-navlink"> Home </a>
-          <a href="#aboutus" class="nav-link sidebar-navlink"> About Us </a>
-          <a href="#services" class="nav-link sidebar-navlink"> Services </a>
-          <a href="#portfolio" class="nav-link sidebar-navlink">
-            Projects
-          </a>
-          <div class="flex gap-10 flex-col lg:hidden">
-           <a href="/contact-us.html">
+    </nav>
+    <!-- Navbar and sidebar end -->
+    <!------------ sidebar start -------->
+    <div class="2xl:flex 2xl:items-center 2xl:justify-center">
+      <div class="2xl:flex-shrink-0">
+        <div
+          id="sidebarbtn"
+          class="fixed z-[10000] bg-sunsetRed top-0 w-full sm:w-[50%] left-[-105%] h-screen p-6 duration-300 ease-in-out lg:hidden shadow-2xl"
+        >
+          <div class="flex flex-col gap-6">
+            <img
+              class="absolute right-3 hover:rotate-90 duration-300 ease-in-out transition-all cursor-pointer"
+              id="cancel"
+              src="/assets/svg/Cross-Icon.svg"
+              alt="Cross-Icon"
+            />
+            <a href="/homepage.html" class="sidebar-navlink"> Home </a>
+            <a href="/homepage.html" class="nav-link sidebar-navlink">
+              About Us
+            </a>
+            <a href="/homepage.html" class="nav-link sidebar-navlink">
+              Services
+            </a>
+            <a href="/homepage.html" class="nav-link sidebar-navlink">
+              Projects
+            </a>
+            <div class="flex gap-10 flex-col lg:hidden">
+              <a href="/contact-us.html">
                 <button
                   class="bg-white md:px-7 py-2 md:py-4 text-sunsetRed hover:text-white text-base font-medium leading-[133%] hover:bg-transparent border-[1px] border-white transition-all duration-300 ease-in-out max-w-[200px] w-full"
                   type="submit"
                 >
-                 Contact Us
+                  Contact Us
                 </button>
               </a>
-            <div class="relative">
-              <button id="sidebarLanguageDropdownButton" class="flex items-center gap-3 ">
-                <img src="/assets/svg/language.svg" alt="language" />
-                <p id="sidebarLanguageText" class="text-white text-xl font-medium leading-normal">
-                  English
-                </p>
-                <img src="/assets/svg/sidebar-downward-icon.svg" alt="sidebar-downward-icon" />
-              </button>
-              <div id="sidebarLanguageDropdown"
-                class="hidden overflow-hidden absolute mt-2 w-32 bg-white rounded-lg shadow-lg">
-                <a href="/featured-projects.html" class="language-text" data-value="English">English</a>
-                <a href="/projectos-em-destaque.html" class="language-text" data-value="Português">Português</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="sidebar-overlay" class="fixed bg-black/30 backdrop-blur-sm inset-0 z-[60] hidden"></div>
-    </div>
-  </div>
-  <!-- FILTER SECTION -->
-  <section class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[951px] w-full mx-auto  px-4 md:px-8 2xl:px-12 flex flex-col
-    items-center 2xl:mb-[89px] xl:mb-[70px] lg:mb-[60px] md:mb-[50px] mb-10">
-    <div class="lg:mt-[76px] mt-10 w-full">
-      <h3 class="heading font-bold">
-        Featured Projects</h3>
-      <p class="sm:mt-[21px]  mt-[14px] text-xl text-deepCharcoal 2xl:mb-[76px] xl:mb-[56px] sm:mb-[60px] mb-[41px]">
-        The portfolio below showcases the wide range of projects we deliver.
-        For bespoke projects, don’t hesitate to get in touch with us.
-      </p>
-      <!-- FILTER-BUTTONS -->
-      <div
-        class="flex flex-wrap gap-2 sm:gap-3 2xl:justify-between 2xl:mb-[55px] mb-8 w-full font-inter whitespace-nowrap"
-        id="filter-buttons">
-        <button class="filter-btn filter-buttons active" data-category="all">
-          All
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="heritage">
-          Hospitals and Medical Buildings
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="museums">
-          Museums
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="service">
-          Service Buildings
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="education">
-          Education facilities
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="residential">
-          Residential Buildings
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="commercial">
-          Industrial Buildings
-        </button>
-        <button class="filter-btn filter-buttons border-black" data-category="others">
-          Others
-        </button>
-      </div>
-      <!-- Image Gallery Grid -->
-      <div class="flex flex-col items-center justify-center">
-        <div id="gallery"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-7 3xl:gap-x-9 gap-y-[23px] sm:gap-y-[45px] 3xl:gap-y-[50px]">
-          <!-- Images will be dynamically inserted here -->
-        </div>
-        <!-- Loading Spinner -->
-        <div id="loading-spinner" class="flex items-center justify-center mt-10 z-50">
-          <div class="loader"></div>
-        </div>
-        <a class="2xl:max-w-[425px] max-w-[400px] w-full mx-auto flex justify-center items-center"
-          href="/contact-us.html">
-          <button class="primary-button !w-full 2xl:mt-[114px] xl:mt-[82px] mt-8 sm:mt-14">
-            Let’s Chat
-          </button>
-        </a>
-      </div>
-
-      <!------------ modal--------------- -->
-      <!-- Modal Structure -->
-      <div id="imageModal" class="modal-overlay">
-        <div class="modal-content px-4 !z-[2000]">
-          <div class="modal-main bg-white rounded-lg">
-            <div class="modal-header px-4">
-              <h2>Project Details</h2>
-              <button id="closeModal" class="modal-close-btn">×</button>
-            </div>
-            <div class="modal-body p-3 sm:p-6">
               <div class="relative">
-                <!-- Swiper Container -->
-                <swiper-container class="mySwiper !h-[250px] sm:!h-[340px]" loop="false" space-between="30"
-                  centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false"
-                  navigation="false" slides-per-view="1">
-                </swiper-container>
-
-                <!-- Custom Navigation Buttons - Now always visible -->
                 <button
-                  class="swiper-btn-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 !h-[30px] !w-[30px] sm:!h-[40px] sm:!w-[40px] bg-white p-1 rounded-full flex justify-center items-center shadow-md hover:bg-gray-100 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m15 18-6-6 6-6" />
-                  </svg>
+                  id="sidebarLanguageDropdownButton"
+                  class="flex items-center gap-3"
+                >
+                  <img src="/assets/svg/language.svg" alt="language" />
+                  <p
+                    id="sidebarLanguageText"
+                    class="text-white text-xl font-medium leading-normal"
+                  >
+                    English
+                  </p>
+                  <img
+                    src="/assets/svg/sidebar-downward-icon.svg"
+                    alt="sidebar-downward-icon"
+                  />
                 </button>
-                <button
-                  class="swiper-btn-next absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-1 !h-[30px] !w-[30px] sm:!h-[40px] sm:!w-[40px] flex justify-center items-center  hover:bg-gray-100 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
-                </button>
-
-                <!-- Custom Pagination -->
-                <div class="flex items-center justify-center">
-                  <div
-                    class="swiper-pagination-custom absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-2 border  !border-white !border-opacity-75">
-                  </div>
+                <div
+                  id="sidebarLanguageDropdown"
+                  class="hidden overflow-hidden absolute mt-2 w-32 bg-white rounded-lg shadow-lg"
+                >
+                  <a
+                    href="/featured-projects.html"
+                    class="language-text"
+                    data-value="English"
+                    >English</a
+                  >
+                  <a
+                    href="/projectos-em-destaque.html"
+                    class="language-text"
+                    data-value="Português"
+                    >Português</a
+                  >
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="sidebar-overlay"
+          class="fixed bg-black/30 backdrop-blur-sm inset-0 z-[60] hidden"
+        ></div>
+      </div>
+    </div>
+    <!-- FILTER SECTION -->
+    <section
+      class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[951px] w-full mx-auto px-4 md:px-8 2xl:px-12 flex flex-col items-center 2xl:mb-[89px] xl:mb-[70px] lg:mb-[60px] md:mb-[50px] mb-10"
+    >
+      <div class="lg:mt-[76px] mt-10 w-full">
+        <h3 class="heading font-bold">Featured Projects</h3>
+        <p
+          class="sm:mt-[21px] mt-[14px] text-xl text-deepCharcoal 2xl:mb-[76px] xl:mb-[56px] sm:mb-[60px] mb-[41px]"
+        >
+          The portfolio below showcases the wide range of projects we deliver.
+          For bespoke projects, don’t hesitate to get in touch with us.
+        </p>
+        <!-- FILTER-BUTTONS -->
+        <div
+          class="flex flex-wrap gap-2 sm:gap-3 2xl:justify-between 2xl:mb-[55px] mb-8 w-full font-inter whitespace-nowrap"
+          id="filter-buttons"
+        >
+          <button class="filter-btn filter-buttons active" data-category="all">
+            All
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="heritage"
+          >
+            Hospitals and Medical Buildings
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="museums"
+          >
+            Museums
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="service"
+          >
+            Service Buildings
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="education"
+          >
+            Education facilities
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="residential"
+          >
+            Residential Buildings
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="commercial"
+          >
+            Industrial Buildings
+          </button>
+          <button
+            class="filter-btn filter-buttons border-black"
+            data-category="others"
+          >
+            Others
+          </button>
+        </div>
+        <!-- Image Gallery Grid -->
+        <div class="flex flex-col items-center justify-center">
+          <div
+            id="gallery"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-7 3xl:gap-x-9 gap-y-[23px] sm:gap-y-[45px] 3xl:gap-y-[50px]"
+          >
+            <!-- Images will be dynamically inserted here -->
+          </div>
+          <!-- Loading Spinner -->
+          <div
+            id="loading-spinner"
+            class="flex items-center justify-center mt-10 z-50"
+          >
+            <div class="loader"></div>
+          </div>
+          <a
+            class="2xl:max-w-[425px] max-w-[400px] w-full mx-auto flex justify-center items-center"
+            href="/contact-us.html"
+          >
+            <button
+              class="primary-button !w-full 2xl:mt-[114px] xl:mt-[82px] mt-8 sm:mt-14"
+            >
+              Let’s Chat
+            </button>
+          </a>
+        </div>
 
-              <div class="modal-text">
-                <h3 id="modalTitle" class="text-xl font-semibold mb-1 mt-2 lg:text-[24px]"></h3>
-                <div id="modalArchitect" class="modal-architect text-base sm:text-lg text-[#6b7280] mb-2"></div>
-                <div id="modalLocation" class="modal-location text-base sm:text-lg text-[#6b7280]"></div>
+        <!------------ modal--------------- -->
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal-overlay">
+          <div class="modal-content px-4 !z-[2000]">
+            <div class="modal-main bg-white rounded-lg">
+              <div class="modal-header px-4">
+                <h2>Project Details</h2>
+                <button id="closeModal" class="modal-close-btn">×</button>
+              </div>
+              <div class="modal-body p-3 sm:p-6">
+                <div class="relative">
+                  <!-- Swiper Container -->
+                  <swiper-container
+                    class="mySwiper !h-[250px] sm:!h-[340px]"
+                    loop="false"
+                    space-between="30"
+                    centered-slides="true"
+                    autoplay-delay="2500"
+                    autoplay-disable-on-interaction="false"
+                    navigation="false"
+                    slides-per-view="1"
+                  >
+                  </swiper-container>
+
+                  <!-- Custom Navigation Buttons - Now always visible -->
+                  <button
+                    class="swiper-btn-prev absolute left-4 top-1/2 -translate-y-1/2 z-10 !h-[30px] !w-[30px] sm:!h-[40px] sm:!w-[40px] bg-white p-1 rounded-full flex justify-center items-center shadow-md hover:bg-gray-100 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m15 18-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <button
+                    class="swiper-btn-next absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-1 !h-[30px] !w-[30px] sm:!h-[40px] sm:!w-[40px] flex justify-center items-center hover:bg-gray-100 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
+
+                  <!-- Custom Pagination -->
+                  <div class="flex items-center justify-center">
+                    <div
+                      class="swiper-pagination-custom md:rounded-[20px] rounded absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex gap-2 border !border-white !border-opacity-75"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="modal-text">
+                  <h3
+                    id="modalTitle"
+                    class="text-xl font-semibold mb-1 mt-2 lg:text-[24px]"
+                  ></h3>
+                  <div
+                    id="modalArchitect"
+                    class="modal-architect text-base sm:text-lg text-[#6b7280] mb-2"
+                  ></div>
+                  <div
+                    id="modalLocation"
+                    class="modal-location text-base sm:text-lg text-[#6b7280]"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
-    </div>
-    </div>
-  </section>
-  <!-- FOOTER -->
-  <footer>
-    <span class="!bg-deepCharcoal opacity-[0.32] w-full flex h-[1px]"></span>
-    <div
-      class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[880px] w-full mx-auto px-4 md:pt-14 pt-10 !pb-[22px] sm:!pb-[100px] flex xl:flex-row flex-col gap-4 items-center justify-between ">
-
-      <div class="text-graphiteGray text-sm md:text-[15px] font-medium xl:w-fit w-full text-center">
-        © Copyright 2024 CPX, Lda. - Consulting and Engineering Projects -
-        <a href="mailto:geral@cpx.com.pt"
-          class="underline text-graphiteGray text-sm md:text-[15px]">geral@cpx.com.pt</a>
-      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <span class="!bg-deepCharcoal opacity-[0.32] w-full flex h-[1px]"></span>
       <div
-        class="flex flex-wrap items-center justify-between xm:gap-10 gap-4 2xl:gap-[75px] xl:w-fit w-full text-center">
-        <div class="flex items-center text-graphiteGray text-sm md:text-[15px] font-medium gap-1 mx-auto">
-          <p>website:</p>
-          <a href="mailto:www.mariaoliveira.co.uk"
-            class="underline text-graphiteGray text-sm md:text-[15px] font-medium">www.mariaoliveira.co.uk</a>
-
+        class="2xl:max-w-[1764px] xl:max-w-[1322px] max-w-[880px] w-full mx-auto px-4 md:pt-14 pt-10 !pb-[22px] sm:!pb-[100px] flex xl:flex-row flex-col gap-4 items-center justify-between"
+      >
+        <div
+          class="text-graphiteGray text-sm md:text-[15px] font-medium xl:w-fit w-full text-center"
+        >
+          © Copyright 2024 CPX, Lda. - Consulting and Engineering Projects -
+          <a
+            href="mailto:geral@cpx.com.pt"
+            class="underline text-graphiteGray text-sm md:text-[15px]"
+            >geral@cpx.com.pt</a
+          >
         </div>
-        <a class="textgraphiteGray text-graphiteGray text-sm md:text-[15px] font-medium underline mx-auto"
-          href="/privacy-policy.html">Terms
-          &
-          Policies</a>
+        <div
+          class="flex flex-wrap items-center justify-between xm:gap-10 gap-4 2xl:gap-[75px] xl:w-fit w-full text-center"
+        >
+          <div
+            class="flex items-center text-graphiteGray text-sm md:text-[15px] font-medium gap-1 mx-auto"
+          >
+            <p>website:</p>
+            <a
+              href="https://www.mariaoliveira.co.uk/"
+              target="_blank"
+              class="underline text-graphiteGray text-sm md:text-[15px] font-medium"
+              >www.mariaoliveira.co.uk</a
+            >
+          </div>
+          <a
+            class="textgraphiteGray text-graphiteGray text-sm md:text-[15px] font-medium underline mx-auto"
+            href="/privacy-policy.html"
+            >Terms & Policies</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
-  <script>
-    // Simple array of images with categories
-    const allImages = [{
-        id: 1,
-        src: "/assets/webp/card-1.webp",
-        category: "heritage",
-        alt: "Heritage Building 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-1.webp"
-        ]
+    </footer>
+    <!-- ARRAY-ITEM -->
+    <script src="/helper/featured-projects.js"></script>
+    <script>
+      // State variables
+      let currentPage = 0;
+      const itemsPerPage = 8;
+      let isLoading = false;
+      let currentCategory = "all";
+      let filteredImages = allImages;
 
-      },
-      {
-        id: 2,
-        category: "museums",
-        alt: "Museum 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-3.webp"
-        ]
+      // DOM Elements
+      const gallery = document.getElementById("gallery");
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const loadingSpinner = document.getElementById("loading-spinner");
 
-      },
-      {
-        id: 3,
-        src: "/assets/webp/card-3.webp",
-        category: "heritage",
-        alt: "Heritage Building 2",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 4,
-        src: "/assets/webp/card-4.webp",
-        category: "education",
-        alt: "Education Building 1",
-        title: "Colonial Architecture",
-        architect: "An exemplary representation of colonial-era architectural design and craftsmanship.",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-4.webp",
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
+      // Add new element for end message
+      const endMessage = document.createElement("div");
+      endMessage.className = "text-center text-xl text-gray-600 mt-8 mb-4";
+      endMessage.style.display = "none";
+      gallery.parentNode.insertBefore(endMessage, loadingSpinner);
 
-      },
-      {
-        id: 5,
-        src: "/assets/webp/card-5.webp",
-        category: "commercial",
-        alt: "Commercial Building 1",
-        title: "Corporate Headquarters",
-        architect: "A sleek and modern commercial building representing corporate excellence.",
-        year: "2016",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-3.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 6,
-        src: "/assets/webp/card-6.webp",
-        category: "residential",
-        alt: "Residential Building 1",
-        title: "Urban Living Space",
-        architect: "A cozy and contemporary residential building located in the heart of the city.",
-        year: "2020",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-6.webp",
-        ]
-      },
-      {
-        id: 7,
-        src: "/assets/webp/card-7.webp",
-        category: "museums",
-        alt: "Museum 2",
-        title: "Natural History Museum",
-        architect: "A fascinating museum showcasing the wonders of natural history and biodiversity.",
-        year: "2009",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-7.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 8,
-        src: "/assets/webp/card-8.webp",
-        category: "service",
-        alt: "Service Building 1",
-        title: "Community Center",
-        architect: "A vibrant hub for community activities and social gatherings.",
-        year: "2023",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 9,
-        src: "/assets/webp/card-9.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Research Institute",
-        architect: "A pioneering institute dedicated to cutting-edge research and development.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 10,
-        src: "/assets/webp/card-10.webp",
-        category: "commercial",
-        alt: "Commercial Building 2",
-        title: "Retail Complex",
-        architect: "A bustling commercial center offering a variety of retail and dining options.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 11,
-        src: "/assets/webp/card-11.webp",
-        category: "residential",
-        alt: "Residential Building 2",
-        title: "Suburban Homes",
-        architect: "A serene residential complex nestled in a quiet suburban neighborhood.",
-        year: "2005",
-        location: "London",
-        images: [
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
+      function openModal(src, alt) {
+        const modal = document.getElementById("imageModal");
+        const swiperContainer = modal.querySelector("swiper-container");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalArchitect = document.getElementById("modalArchitect");
+        const modalLocation = document.getElementById("modalLocation");
 
-      },
-      {
-        id: 12,
-        src: "/assets/webp/card-12.webp",
-        category: "others",
-        alt: "Other Building 1",
-        title: "Multipurpose Facility",
-        architect: "A versatile facility designed for various events and functions.",
-        year: "2001",
-        location: "London",
-        images: [
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-11.webp",
-        ]
-      },
-      {
-        id: 13,
-        src: "/assets/webp/card-13.webp",
-        category: "heritage",
-        alt: "Heritage Building 3",
-        title: "Art Gallery",
-        architect: "An inspiring gallery featuring works of art from renowned artists worldwide.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-13.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 14,
-        src: "/assets/webp/card-14.webp",
-        category: "museums",
-        alt: "Museum 3",
-        title: "Historic Theater",
-        architect: "An iconic theater preserving the grandeur of early 20th-century entertainment.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-14.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 15,
-        src: "/assets/webp/card-15.webp",
-        category: "service",
-        alt: "Service Building 2",
-        title: "Healthcare Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-15.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
-      {
-        id: 16,
-        src: "/assets/webp/card-16.webp",
-        category: "others",
-        alt: "Other Building 2",
-        title: "Gym Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-16.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
-      {
-        id: 17,
-        src: "/assets/webp/card-1.webp",
-        category: "heritage",
-        alt: "Heritage Building 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-1.webp"
-        ]
-      },
-      {
-        id: 18,
-        src: "/assets/webp/card-2.webp",
-        category: "museums",
-        alt: "Museum 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-3.webp"
-        ]
-      },
-      {
-        id: 19,
-        src: "/assets/webp/card-3.webp",
-        category: "heritage",
-        alt: "Heritage Building 2",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 20,
-        src: "/assets/webp/card-4.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Colonial Architecture",
-        architect: "An exemplary representation of colonial-era architectural design and craftsmanship.",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-4.webp",
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 21,
-        src: "/assets/webp/card-5.webp",
-        category: "commercial",
-        alt: "Commercial Building 1",
-        title: "Corporate Headquarters",
-        architect: "A sleek and modern commercial building representing corporate excellence.",
-        year: "2016",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-3.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 22,
-        src: "/assets/webp/card-6.webp",
-        category: "residential",
-        alt: "Residential Building 1",
-        title: "Urban Living Space",
-        architect: "A cozy and contemporary residential building located in the heart of the city.",
-        year: "2020",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-6.webp",
-        ]
-      },
-      {
-        id: 23,
-        src: "/assets/webp/card-7.webp",
-        category: "museums",
-        alt: "Museum 2",
-        title: "Natural History Museum",
-        architect: "A fascinating museum showcasing the wonders of natural history and biodiversity.",
-        year: "2009",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-7.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 24,
-        src: "/assets/webp/card-8.webp",
-        category: "service",
-        alt: "Service Building 1",
-        title: "Community Center",
-        architect: "A vibrant hub for community activities and social gatherings.",
-        year: "2023",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 25,
-        src: "/assets/webp/card-9.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Research Institute",
-        architect: "A pioneering institute dedicated to cutting-edge research and development.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 26,
-        src: "/assets/webp/card-10.webp",
-        category: "commercial",
-        alt: "Commercial Building 2",
-        title: "Retail Complex",
-        architect: "A bustling commercial center offering a variety of retail and dining options.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 27,
-        src: "/assets/webp/card-11.webp",
-        category: "residential",
-        alt: "Residential Building 2",
-        title: "Suburban Homes",
-        architect: "A serene residential complex nestled in a quiet suburban neighborhood.",
-        year: "2005",
-        location: "London",
-        images: [
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 28,
-        src: "/assets/webp/card-12.webp",
-        category: "others",
-        alt: "Other Building 1",
-        title: "Multipurpose Facility",
-        architect: "A versatile facility designed for various events and functions.",
-        year: "2001",
-        location: "London",
-        images: [
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-11.webp",
-        ]
-      },
-      {
-        id: 29,
-        src: "/assets/webp/card-13.webp",
-        category: "heritage",
-        alt: "Heritage Building 3",
-        title: "Art Gallery",
-        architect: "An inspiring gallery featuring works of art from renowned artists worldwide.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-13.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 30,
-        src: "/assets/webp/card-14.webp",
-        category: "museums",
-        alt: "Museum 3",
-        title: "Historic Theater",
-        architect: "An iconic theater preserving the grandeur of early 20th-century entertainment.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-14.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 31,
-        src: "/assets/webp/card-15.webp",
-        category: "service",
-        alt: "Service Building 2",
-        title: "Healthcare Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-15.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
-      {
-        id: 32,
-        src: "/assets/webp/card-16.webp",
-        category: "others",
-        alt: "Other Building 2",
-        title: "Gym Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-16.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
+        const imageData = allImages.find((img) => img.alt === alt);
 
-      {
-        id: 33,
-        src: "/assets/webp/card-1.webp",
-        category: "heritage",
-        alt: "Heritage Building 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-1.webp"
-        ]
-      },
-      {
-        id: 34,
-        src: "/assets/webp/card-2.webp",
-        category: "museums",
-        alt: "Museum 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-3.webp"
-        ]
-      },
-      {
-        id: 35,
-        src: "/assets/webp/card-3.webp",
-        category: "heritage",
-        alt: "Heritage Building 2",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 36,
-        src: "/assets/webp/card-4.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Colonial Architecture",
-        architect: "An exemplary representation of colonial-era architectural design and craftsmanship.",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-4.webp",
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 37,
-        src: "/assets/webp/card-5.webp",
-        category: "commercial",
-        alt: "Commercial Building 1",
-        title: "Corporate Headquarters",
-        architect: "A sleek and modern commercial building representing corporate excellence.",
-        year: "2016",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-3.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 38,
-        src: "/assets/webp/card-6.webp",
-        category: "residential",
-        alt: "Residential Building 1",
-        title: "Urban Living Space",
-        architect: "A cozy and contemporary residential building located in the heart of the city.",
-        year: "2020",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-6.webp",
-        ]
-      },
-      {
-        id: 39,
-        src: "/assets/webp/card-7.webp",
-        category: "museums",
-        alt: "Museum 2",
-        title: "Natural History Museum",
-        architect: "A fascinating museum showcasing the wonders of natural history and biodiversity.",
-        year: "2009",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-7.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 40,
-        src: "/assets/webp/card-8.webp",
-        category: "service",
-        alt: "Service Building 1",
-        title: "Community Center",
-        architect: "A vibrant hub for community activities and social gatherings.",
-        year: "2023",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 41,
-        src: "/assets/webp/card-9.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Research Institute",
-        architect: "A pioneering institute dedicated to cutting-edge research and development.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 42,
-        src: "/assets/webp/card-10.webp",
-        category: "commercial",
-        alt: "Commercial Building 2",
-        title: "Retail Complex",
-        architect: "A bustling commercial center offering a variety of retail and dining options.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 43,
-        src: "/assets/webp/card-11.webp",
-        category: "residential",
-        alt: "Residential Building 2",
-        title: "Suburban Homes",
-        architect: "A serene residential complex nestled in a quiet suburban neighborhood.",
-        year: "2005",
-        location: "London",
-        images: [
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 44,
-        src: "/assets/webp/card-12.webp",
-        category: "others",
-        alt: "Other Building 1",
-        title: "Multipurpose Facility",
-        architect: "A versatile facility designed for various events and functions.",
-        year: "2001",
-        location: "London",
-        images: [
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-11.webp",
-        ]
-      },
-      {
-        id: 45,
-        src: "/assets/webp/card-13.webp",
-        category: "heritage",
-        alt: "Heritage Building 3",
-        title: "Art Gallery",
-        architect: "An inspiring gallery featuring works of art from renowned artists worldwide.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-13.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 46,
-        src: "/assets/webp/card-14.webp",
-        category: "museums",
-        alt: "Museum 3",
-        title: "Historic Theater",
-        architect: "An iconic theater preserving the grandeur of early 20th-century entertainment.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-14.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 47,
-        src: "/assets/webp/card-15.webp",
-        category: "service",
-        alt: "Service Building 2",
-        title: "Healthcare Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-15.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
-      {
-        id: 48,
-        src: "/assets/webp/card-16.webp",
-        category: "others",
-        alt: "Other Building 2",
-        title: "Gym Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-16.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
-      {
-        id: 49,
-        src: "/assets/webp/card-1.webp",
-        category: "heritage",
-        alt: "Heritage Building 1",
-      },
-      {
-        id: 50,
-        src: "/assets/webp/card-2.webp",
-        category: "museums",
-        alt: "Museum 1",
-      },
-      {
-        id: 51,
-        src: "/assets/webp/card-1.webp",
-        category: "heritage",
-        alt: "Heritage Building 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-1.webp"
-        ]
-      },
-      {
-        id: 52,
-        src: "/assets/webp/card-2.webp",
-        category: "museums",
-        alt: "Museum 1",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-3.webp"
-        ]
-      },
-      {
-        id: 53,
-        src: "/assets/webp/card-3.webp",
-        category: "heritage",
-        alt: "Heritage Building 2",
-        title: "Lisboa Oriental New Hospital",
-        architect: "Arq. Eduardo Souto Moura",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 54,
-        src: "/assets/webp/card-4.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Colonial Architecture",
-        architect: "An exemplary representation of colonial-era architectural design and craftsmanship.",
-        year: "2010",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-4.webp",
-          "/assets/webp/card-1.webp",
-          "/assets/webp/card-2.webp",
-        ]
-      },
-      {
-        id: 56,
-        src: "/assets/webp/card-5.webp",
-        category: "commercial",
-        alt: "Commercial Building 1",
-        title: "Corporate Headquarters",
-        architect: "A sleek and modern commercial building representing corporate excellence.",
-        year: "2016",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-3.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 57,
-        src: "/assets/webp/card-6.webp",
-        category: "residential",
-        alt: "Residential Building 1",
-        title: "Urban Living Space",
-        architect: "A cozy and contemporary residential building located in the heart of the city.",
-        year: "2020",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-5.webp",
-          "/assets/webp/card-6.webp",
-        ]
-      },
-      {
-        id: 58,
-        src: "/assets/webp/card-7.webp",
-        category: "museums",
-        alt: "Museum 2",
-        title: "Natural History Museum",
-        architect: "A fascinating museum showcasing the wonders of natural history and biodiversity.",
-        year: "2009",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-7.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-4.webp",
-        ]
-      },
-      {
-        id: 59,
-        src: "/assets/webp/card-8.webp",
-        category: "service",
-        alt: "Service Building 1",
-        title: "Community Center",
-        architect: "A vibrant hub for community activities and social gatherings.",
-        year: "2023",
-        location: "Lisbon, Portugal",
-        images: [
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 60,
-        src: "/assets/webp/card-9.webp",
-        category: "education",
-        alt: "Education Building 2",
-        title: "Research Institute",
-        architect: "A pioneering institute dedicated to cutting-edge research and development.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-6.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 61,
-        src: "/assets/webp/card-10.webp",
-        category: "commercial",
-        alt: "Commercial Building 2",
-        title: "Retail Complex",
-        architect: "A bustling commercial center offering a variety of retail and dining options.",
-        year: "2024",
-        location: "London",
-        images: [
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 62,
-        src: "/assets/webp/card-11.webp",
-        category: "residential",
-        alt: "Residential Building 2",
-        title: "Suburban Homes",
-        architect: "A serene residential complex nestled in a quiet suburban neighborhood.",
-        year: "2005",
-        location: "London",
-        images: [
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-9.webp",
-          "/assets/webp/card-8.webp",
-        ]
-      },
-      {
-        id: 63,
-        src: "/assets/webp/card-12.webp",
-        category: "others",
-        alt: "Other Building 1",
-        title: "Multipurpose Facility",
-        architect: "A versatile facility designed for various events and functions.",
-        year: "2001",
-        location: "London",
-        images: [
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-          "/assets/webp/card-8.webp",
-          "/assets/webp/card-11.webp",
-        ]
-      },
-      {
-        id: 64,
-        src: "/assets/webp/card-13.webp",
-        category: "heritage",
-        alt: "Heritage Building 3",
-        title: "Art Gallery",
-        architect: "An inspiring gallery featuring works of art from renowned artists worldwide.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-13.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-2.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 65,
-        src: "/assets/webp/card-14.webp",
-        category: "museums",
-        alt: "Museum 3",
-        title: "Historic Theater",
-        architect: "An iconic theater preserving the grandeur of early 20th-century entertainment.",
-        year: "2003",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-14.webp",
-          "/assets/webp/card-11.webp",
-          "/assets/webp/card-12.webp",
-          "/assets/webp/card-10.webp",
-        ]
-      },
-      {
-        id: 66,
-        src: "/assets/webp/card-15.webp",
-        category: "service",
-        alt: "Service Building 2",
-        title: "Healthcare Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-15.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
-      {
-        id: 67,
-        src: "/assets/webp/card-16.webp",
-        category: "others",
-        alt: "Other Building 2",
-        title: "Gym Center",
-        architect: "A modern healthcare facility providing comprehensive medical services.",
-        year: "2010",
-        location: "America/Los_Angeles",
-        images: [
-          "/assets/webp/card-16.webp",
-          "/assets/webp/card-13.webp",
-        ]
-      },
+        if (imageData) {
+          // Clear existing slides
+          swiperContainer.innerHTML = "";
 
-    ];
-
-
-
-    // State variables
-    let currentPage = 0;
-    const itemsPerPage = 8;
-    let isLoading = false;
-    let currentCategory = 'all';
-    let filteredImages = allImages;
-
-    // DOM Elements
-    const gallery = document.getElementById('gallery');
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const loadingSpinner = document.getElementById('loading-spinner');
-
-    // Add new element for end message
-    const endMessage = document.createElement('div');
-    endMessage.className = 'text-center text-xl text-gray-600 mt-8 mb-4';
-    endMessage.style.display = 'none';
-    gallery.parentNode.insertBefore(endMessage, loadingSpinner);
-
-    function openModal(src, alt) {
-      const modal = document.getElementById('imageModal');
-      const swiperContainer = modal.querySelector('swiper-container');
-      const modalTitle = document.getElementById('modalTitle');
-      const modalArchitect = document.getElementById('modalArchitect');
-      const modalLocation = document.getElementById('modalLocation');
-
-      const imageData = allImages.find(img => img.alt === alt);
-
-      if (imageData) {
-
-        // Clear existing slides
-        swiperContainer.innerHTML = '';
-
-        // Add slides for each image
-        imageData.images.forEach(imgSrc => {
-          swiperContainer.innerHTML += `
+          // Add slides for each image
+          imageData.images.forEach((imgSrc) => {
+            swiperContainer.innerHTML += `
     <swiper-slide>
       <img src="${imgSrc}" alt="${imageData.alt}" class="w-full h-full rounded-lg object-cover">
     </swiper-slide>
     `;
-        });
+          });
 
-        modalTitle.textContent = imageData.title;
-        modalArchitect.textContent = `${imageData.architect}, ${imageData.year}`;
-        modalLocation.textContent = imageData.location;
+          modalTitle.textContent = imageData.title;
+          modalArchitect.textContent = `${imageData.architect}, ${imageData.year}`;
+          modalLocation.textContent = imageData.location;
+        }
+
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
       }
 
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+      }
 
-    function closeModal() {
-      const modal = document.getElementById('imageModal');
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+      // Event listeners for modal
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("imageModal");
+        const closeBtn = document.getElementById("closeModal");
 
-    // Event listeners for modal
-    document.addEventListener('DOMContentLoaded', () => {
-      const modal = document.getElementById('imageModal');
-      const closeBtn = document.getElementById('closeModal');
+        closeBtn.addEventListener("click", closeModal);
 
-      closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
 
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          closeModal();
-        }
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            closeModal();
+          }
+        });
       });
-
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
-          closeModal();
-        }
-      });
-    });
-    // Create image element
-    function createImageElement(image) {
-      const thumbnailSrc = image.images ? image.images[0] : image.src;
-      return `
+      // Create image element
+      function createImageElement(image) {
+        const thumbnailSrc = image.images ? image.images[0] : image.src;
+        return `
  <div class="relative group cursor-pointer" onclick="openModal('${thumbnailSrc}', '${image.alt}')">
    <img class="transition-transform hover:scale-105 cursor-pointer w-full min-h-[233px] max-h-[233px] object-center"
      src="${thumbnailSrc}" alt="${image.alt}" loading="lazy">
  </div>
  `;
-    }
-
-    // Load more images
-    function loadMoreImages() {
-      if (isLoading) return;
-
-      const start = currentPage * itemsPerPage;
-      const end = start + itemsPerPage;
-      const nextImages = filteredImages.slice(start, end);
-
-      if (nextImages.length === 0) {
-        loadingSpinner.classList.add('hidden');
-        endMessage.style.display = 'block';
-        return;
       }
 
-      isLoading = true;
-      loadingSpinner.classList.remove('hidden');
-      endMessage.style.display = 'none';
+      // Load more images
+      function loadMoreImages() {
+        if (isLoading) return;
 
-      setTimeout(() => {
-        nextImages.forEach(image => {
-          gallery.innerHTML += createImageElement(image);
-        });
-        currentPage++;
+        const start = currentPage * itemsPerPage;
+        const end = start + itemsPerPage;
+        const nextImages = filteredImages.slice(start, end);
 
-        isLoading = false;
-        loadingSpinner.classList.add('hidden');
-
-        if ((currentPage * itemsPerPage) >= filteredImages.length) {
-          endMessage.style.display = 'block';
+        if (nextImages.length === 0) {
+          loadingSpinner.classList.add("hidden");
+          endMessage.style.display = "block";
+          return;
         }
-      }, 800);
-    }
 
-    // Filter images
-    function filterImages(category) {
-      currentPage = 0;
-      currentCategory = category;
-      endMessage.style.display = 'none';
+        isLoading = true;
+        loadingSpinner.classList.remove("hidden");
+        endMessage.style.display = "none";
 
-      filteredImages = category === 'all' ?
-        allImages :
-        allImages.filter(img => img.category === category);
+        setTimeout(() => {
+          nextImages.forEach((image) => {
+            gallery.innerHTML += createImageElement(image);
+          });
+          currentPage++;
 
-      gallery.innerHTML = '';
-      loadMoreImages();
-    }
+          isLoading = false;
+          loadingSpinner.classList.add("hidden");
 
-    // Event Listeners for filter buttons
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        const category = button.dataset.category;
-        filterImages(category);
-      });
-    });
+          if (currentPage * itemsPerPage >= filteredImages.length) {
+            endMessage.style.display = "block";
+          }
+        }, 800);
+      }
 
-    // Infinite scroll handler
-    function handleScroll() {
-      if (isLoading) return;
+      // Filter images
+      function filterImages(category) {
+        currentPage = 0;
+        currentCategory = category;
+        endMessage.style.display = "none";
 
-      const endOfPage = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100;
+        filteredImages =
+          category === "all"
+            ? allImages
+            : allImages.filter((img) => img.category === category);
 
-      if (endOfPage && currentPage * itemsPerPage < filteredImages.length) {
+        gallery.innerHTML = "";
         loadMoreImages();
       }
-    } // Modal event
-    document.addEventListener('DOMContentLoaded', () => {
-      const modal = document.getElementById('imageModal');
-      const closeBtn = document.getElementById('closeModal');
 
-      closeBtn.addEventListener('click', closeModal);
-
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          closeModal();
-        }
+      // Event Listeners for filter buttons
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+          const category = button.dataset.category;
+          filterImages(category);
+        });
       });
 
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-          closeModal();
+      // Infinite scroll handler
+      function handleScroll() {
+        if (isLoading) return;
+
+        const endOfPage =
+          window.innerHeight + window.scrollY >=
+          document.documentElement.scrollHeight - 100;
+
+        if (endOfPage && currentPage * itemsPerPage < filteredImages.length) {
+          loadMoreImages();
         }
+      } // Modal event
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("imageModal");
+        const closeBtn = document.getElementById("closeModal");
+
+        closeBtn.addEventListener("click", closeModal);
+
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+            closeModal();
+          }
+        });
       });
-    });
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
+      // Add scroll event listener
+      window.addEventListener("scroll", handleScroll);
 
-    // Initial load
-    filterImages('all');
-  </script>
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Include GSAP and ScrollTrigger -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-  <!-- JS file -->
-  <script src="./index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-<script>
-  function openModal(src, alt) {
-    const modal = document.getElementById('imageModal');
-    const swiperContainer = modal.querySelector('swiper-container');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalArchitect = document.getElementById('modalArchitect');
-    const modalLocation = document.getElementById('modalLocation');
-    const paginationContainer = modal.querySelector('.swiper-pagination-custom');
+      // Initial load
+      filterImages("all");
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Include GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-- JS file -->
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      function openModal(src, alt) {
+        const modal = document.getElementById("imageModal");
+        const swiperContainer = modal.querySelector("swiper-container");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalArchitect = document.getElementById("modalArchitect");
+        const modalLocation = document.getElementById("modalLocation");
+        const paginationContainer = modal.querySelector(
+          ".swiper-pagination-custom"
+        );
 
-    const imageData = allImages.find(img => img.alt === alt);
+        const imageData = allImages.find((img) => img.alt === alt);
 
-    if (imageData) {
-      // Clear existing slides
-      swiperContainer.innerHTML = '';
-      paginationContainer.innerHTML = '';
+        if (imageData) {
+          // Clear existing slides
+          swiperContainer.innerHTML = "";
+          paginationContainer.innerHTML = "";
 
-      // Add slides for each image
-      imageData.images.forEach((imgSrc, index) => {
-        swiperContainer.innerHTML += `
+          // Add slides for each image
+          imageData.images.forEach((imgSrc, index) => {
+            swiperContainer.innerHTML += `
           <swiper-slide>
             <img src="${imgSrc}" alt="${imageData.alt}" class="w-full h-full rounded-lg object-cover">
           </swiper-slide>
         `;
 
-        // Add thumbnail pagination bullets
-        paginationContainer.innerHTML += `
+            // Add thumbnail pagination bullets
+            paginationContainer.innerHTML += `
           <button 
-            class="custom-pagination-bullet ${index === 0 ? 'active' : ''}"
+            class="custom-pagination-bullet ${index === 0 ? "active" : ""}"
             data-index="${index}"
             style="background-image: url('${imgSrc}')">
           </button>
         `;
-      });
-
-      modalTitle.textContent = imageData.title;
-      modalArchitect.textContent = `${imageData.architect}, ${imageData.year}`;
-      modalLocation.textContent = imageData.location;
-
-      // Navigation buttons
-      const prevBtn = modal.querySelector('.swiper-btn-prev');
-      const nextBtn = modal.querySelector('.swiper-btn-next');
-
-      const updateButtonState = () => {
-        const swiperInstance = swiperContainer.swiper;
-        const isBeginning = swiperInstance.isBeginning;
-        const isEnd = swiperInstance.isEnd;
-
-        // Update 'prev' button
-        prevBtn.disabled = isBeginning;
-        prevBtn.classList.toggle('no-pointer', isBeginning);
-        prevBtn.classList.toggle('bg-fade', isBeginning);
-
-        // Update 'next' button
-        nextBtn.disabled = isEnd;
-        nextBtn.classList.toggle('no-pointer', isEnd);
-        nextBtn.classList.toggle('bg-fade', isEnd);
-      };
-
-      const updatePagination = () => {
-        const activeIndex = swiperContainer.swiper.realIndex;
-        paginationContainer.querySelectorAll('.custom-pagination-bullet').forEach((bullet, index) => {
-          bullet.classList.toggle('active', index === activeIndex);
-        });
-      };
-
-      const initializePagination = () => {
-        const bullets = paginationContainer.querySelectorAll('.custom-pagination-bullet');
-        bullets.forEach((bullet) => {
-          const index = parseInt(bullet.dataset.index, 10);
-          bullet.addEventListener('click', () => {
-            swiperContainer.swiper.slideTo(index);
-          });
-        });
-      };
-
-      // Wait for Swiper to be ready
-      const initializeSwiper = () => {
-        if (swiperContainer.swiper) {
-          const swiperInstance = swiperContainer.swiper;
-
-          // Add navigation listeners
-          prevBtn.addEventListener('click', () => swiperInstance.slidePrev());
-          nextBtn.addEventListener('click', () => swiperInstance.slideNext());
-
-          // Update states on slide change
-          swiperInstance.on('slideChange', () => {
-            updateButtonState();
-            updatePagination();
           });
 
-          // Initialize pagination
-          initializePagination();
+          modalTitle.textContent = imageData.title;
+          modalArchitect.textContent = `${imageData.architect}, ${imageData.year}`;
+          modalLocation.textContent = imageData.location;
 
-          // Initial state update
-          updateButtonState();
-          updatePagination();
-        } else {
-          // If swiper isn't ready yet, try again
-          setTimeout(initializeSwiper, 100);
+          // Navigation buttons
+          const prevBtn = modal.querySelector(".swiper-btn-prev");
+          const nextBtn = modal.querySelector(".swiper-btn-next");
+
+          const updateButtonState = () => {
+            const swiperInstance = swiperContainer.swiper;
+            const isBeginning = swiperInstance.isBeginning;
+            const isEnd = swiperInstance.isEnd;
+
+            // Update 'prev' button
+            prevBtn.disabled = isBeginning;
+            prevBtn.classList.toggle("no-pointer", isBeginning);
+            prevBtn.classList.toggle("bg-fade", isBeginning);
+
+            // Update 'next' button
+            nextBtn.disabled = isEnd;
+            nextBtn.classList.toggle("no-pointer", isEnd);
+            nextBtn.classList.toggle("bg-fade", isEnd);
+          };
+
+          const updatePagination = () => {
+            const activeIndex = swiperContainer.swiper.realIndex;
+            paginationContainer
+              .querySelectorAll(".custom-pagination-bullet")
+              .forEach((bullet, index) => {
+                bullet.classList.toggle("active", index === activeIndex);
+              });
+          };
+
+          const initializePagination = () => {
+            const bullets = paginationContainer.querySelectorAll(
+              ".custom-pagination-bullet"
+            );
+            bullets.forEach((bullet) => {
+              const index = parseInt(bullet.dataset.index, 10);
+              bullet.addEventListener("click", () => {
+                swiperContainer.swiper.slideTo(index);
+              });
+            });
+          };
+
+          // Wait for Swiper to be ready
+          const initializeSwiper = () => {
+            if (swiperContainer.swiper) {
+              const swiperInstance = swiperContainer.swiper;
+
+              // Add navigation listeners
+              prevBtn.addEventListener("click", () =>
+                swiperInstance.slidePrev()
+              );
+              nextBtn.addEventListener("click", () =>
+                swiperInstance.slideNext()
+              );
+
+              // Update states on slide change
+              swiperInstance.on("slideChange", () => {
+                updateButtonState();
+                updatePagination();
+              });
+
+              // Initialize pagination
+              initializePagination();
+
+              // Initial state update
+              updateButtonState();
+              updatePagination();
+            } else {
+              // If swiper isn't ready yet, try again
+              setTimeout(initializeSwiper, 100);
+            }
+          };
+
+          // Start initialization
+          initializeSwiper();
         }
-      };
 
-      // Start initialization
-      initializeSwiper();
-    }
-
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-</script>
-
-</body>
-
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+    </script>
+    <script src="/language-handler.js"></script>
+  </body>
 </html>
